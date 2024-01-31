@@ -9,5 +9,6 @@
 
 ## Branch 관리
 - 문제 출제자가 주간 폴더, 문제별 폴더 및 README를 작성 시 Main에 바로 작성하기 
-- 문제를 풀 때에는, Main에 바로 Commit하지 않고, 자기 Branch에서 하기
+- **문제를 풀 때에는, Main에 바로 Commit하지 않고, 자기 Branch에서 하기**
 - Branch 이름은 다음과 이름 초성으로 하기 `mhk, jwp, jyb, mhw, smy, hyl`
+- 문제를 다 풀었을 때, Main Branch에 MR 보내기
