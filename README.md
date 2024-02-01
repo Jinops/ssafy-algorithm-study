@@ -20,7 +20,7 @@ git clone https://github.com/Jinops/ssafy-algorithm-study.git
 
 2. 자기의 Branch로 바꾸기
 ```
-git checkout "jwp
+git checkout "jwp"
 ```
 - branch가 없을 때, -b 옵션을 넣으면 branch를 새로 생성
 ```
@@ -30,8 +30,6 @@ git checkout -b "jwp"
 3. 문제 모두 푼 후, 파일 add 및 commit 하기
 ```
 git add .
-```
-```
 git commit -m "커밋 내용"
 ```
 
@@ -52,7 +50,7 @@ git push origin jwp
 8. (문제 출제자) Pull Reqest 확인 후 Main에 Merge하기
 <br><kbd><<img width="750" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/09531912-c64e-49d4-b8ce-795c370b4d29"></kbd>
 
-9. 이후 작업 시, 로컬 자신의 Branch에 리모트 main의 최신 내용 가저오는 방법
+9. Merge된 이후 (또는 이전에도) 자신의 로컬 Branch에 리모트 main의 최신 내용 가저오는 방법
 ```
 git checkout main
 git pull
