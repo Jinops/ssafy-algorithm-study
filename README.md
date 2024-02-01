@@ -12,3 +12,37 @@
 - **문제를 풀 때에는, Main에 바로 Commit하지 않고, 자기 Branch에서 하기**
 - Branch 이름은 다음과 이름 초성으로 하기 `mhk, jwp, jyb, mhw, smy, hyl`
 - 문제를 다 풀었을 때, Main Branch에 MR 보내기
+
+```
+git clone https://github.com/Jinops/ssafy-algorithm-study.git
+```
+
+```
+git checkout -b "jwp"
+```
+
+```
+git checkout "jwp
+```
+
+```
+git add .
+```
+```
+git commit -m "커밋 내용"
+```
+
+```
+git push origin jwp
+```
+
+<img width="746" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/3c8df7c7-ca2d-4ae4-948f-d35e03d54d54">
+
+<img width="1009" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/a2c93f63-775a-4dcd-a789-e2550250246b">
+
+<img width="750" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/09531912-c64e-49d4-b8ce-795c370b4d29">
+
+```
+git pull
+```
+
