@@ -52,8 +52,12 @@ git push origin jwp
 8. (문제 출제자) Pull Reqest 확인 후 Main에 Merge하기
 <img width="750" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/09531912-c64e-49d4-b8ce-795c370b4d29">
 
-9. remote에 반영된 내용 pull하기
+10. 이후 작업 시, 로컬 자신의 Branch에 리모트 main의 최신 내용 가저오는 방법
 ```
+git checkout main
 git pull
+git checkout jwp
+git merge main
 ```
+> 참고) branch 목록 보는 방법: `git branch`
 
