@@ -41,18 +41,18 @@ git push origin jwp
 ```
 
 5. Pull requests - New pull reqest
-<img width="229" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/8a51500d-6760-4c31-814c-2f5d6159c4cc">
+<br><kbd><img width="229" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/8a51500d-6760-4c31-814c-2f5d6159c4cc"></kbd>
 
 6. base: main, compare: 작업한 branch로 설정하여, Create pull reqest
-<img width="739" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/45329720-5193-459d-ad27-b51b89db944f">
+<br><kbd><img width="739" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/45329720-5193-459d-ad27-b51b89db944f"></kbd>
 
 7. 내용 간단하게 작성하고, Assignee를 해당 주 문제 출제자로 설정
-<img width="1009" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/a2c93f63-775a-4dcd-a789-e2550250246b">
+<br><kbd><<img width="1009" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/a2c93f63-775a-4dcd-a789-e2550250246b"></kbd>
 
 8. (문제 출제자) Pull Reqest 확인 후 Main에 Merge하기
-<img width="750" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/09531912-c64e-49d4-b8ce-795c370b4d29">
+<br><kbd><<img width="750" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/09531912-c64e-49d4-b8ce-795c370b4d29"></kbd>
 
-10. 이후 작업 시, 로컬 자신의 Branch에 리모트 main의 최신 내용 가저오는 방법
+9. 이후 작업 시, 로컬 자신의 Branch에 리모트 main의 최신 내용 가저오는 방법
 ```
 git checkout main
 git pull
