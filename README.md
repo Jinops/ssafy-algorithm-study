@@ -12,23 +12,19 @@
 - 문제를 다 풀었을 때, Main Branch에 Merge Request 보내기
 
 ### How to
-
 1. main branch를 최신으로 업데이트하기
 ```
-git checkout main
-git pull
+git pull origin main
 ```
 
-2. 자기의 branch로 바꾸기
+2. 새로운 branch를 만들기
 ```
-git checkout jwp-01
+git branch jwp-01 main
 ```
- - branch가 없을 때, -b 옵션을 넣으면 branch를 새로 생성
-```
-git checkout -b jwp-01
-```
+- branch 목록 조회 방법: `git branch`
+- branch 삭제 방법: `git branch -D jwp-01`
 
-3. 자기 branch에 main의 내용을 merge 하기 (최신화)
+3. 현재 작업하는 branch를 새로 만든 branch로 바꾸기
 ```
 git checkout jwp-01
 ```
