@@ -14,7 +14,8 @@
 ### How to
 1. main branch를 최신으로 업데이트하기
 ```
-git pull origin main
+git checkout main
+git pull
 ```
 
 2. 새로운 branch를 만들기
