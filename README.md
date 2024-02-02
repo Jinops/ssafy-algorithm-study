@@ -56,7 +56,8 @@ git push origin jwp
 9. (문제 출제자) Pull Reqest 확인 후 Main에 Merge하기
 <br><kbd><<img width="640" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/71a8a8f9-948a-4b5d-8e13-9e71d1051011"></kbd>
 
-**Merge가 되면, 리모트 레포지토리의 해당 branch는 제거됩니다**
-{: .notice}
+> :warning: **Merge가 되면, 리모트 레포지토리에서 해당 branch는 제거됩니다**.
+
+
 
 
