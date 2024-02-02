@@ -21,16 +21,16 @@ git pull
 
 2. 자기의 branch로 바꾸기
 ```
-git checkout jwp
+git checkout jwp-1
 ```
  - branch가 없을 때, -b 옵션을 넣으면 branch를 새로 생성
 ```
-git checkout -b jwp
+git checkout -b jwp-1
 ```
 
 3. 자기 branch에 main의 내용을 merge 하기 (최신화)
 ```
-git checkout jwp
+git checkout jwp-1
 ```
 
 4. 문제 모두 푼 후, 파일 add 및 commit 하기
@@ -48,15 +48,15 @@ git push origin jwp
 <br><kbd><img width="229" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/8a51500d-6760-4c31-814c-2f5d6159c4cc"></kbd>
 
 7. base: main, compare: 작업한 branch로 설정하여, Create pull reqest
-<br><kbd><img width="640" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/45329720-5193-459d-ad27-b51b89db944f"></kbd>
+<br><kbd><img width="640" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/6f290657-9bf5-4c6d-8130-7584f7ed23a3f"></kbd>
 
 8. 내용 간단하게 작성하고, Assignee를 해당 주 문제 출제자로 설정
-<br><kbd><<img width="640" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/a2c93f63-775a-4dcd-a789-e2550250246b"></kbd>
+<br><kbd><img width="640" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/a2606bcb-0dd0-45c2-970e-b9e665fb92e2"></kbd>
 
 9. (문제 출제자) Pull Reqest 확인 후 Main에 Merge하기
-<br><kbd><<img width="640" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/09531912-c64e-49d4-b8ce-795c370b4d29"></kbd>
+<br><kbd><<img width="640" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/71a8a8f9-948a-4b5d-8e13-9e71d1051011"></kbd>
 
 **Merge가 되면, 리모트 레포지토리의 해당 branch는 제거됩니다**
+{: .notice}
 
-10. 이후 다시 작업을 할 경우, 1~3번 과정을 통해 최신 내용을 갱신하기
 
