@@ -8,7 +8,7 @@
 ## Branch 관리
 - 문제 출제자가 주간 폴더, 문제별 폴더 및 README를 작성 시 Main에 바로 작성하기 
 - **문제를 풀 때에는, Main에 바로 Commit하지 않고, 자기 Branch에서 하기**
-- Branch 이름은 다음과 이름 초성으로 하기 `mhk, jwp, jyb, mhw, smy, hyl`
+- Branch 이름은 다음과 이름 초성-주차로 하기 `mhk-1, jwp-1, jyb-1, mhw-2, smy-2, hyl-3`
 - 문제를 다 풀었을 때, Main Branch에 Merge Request 보내기
 
 ### How to
@@ -56,6 +56,7 @@ git push origin jwp
 9. (문제 출제자) Pull Reqest 확인 후 Main에 Merge하기
 <br><kbd><<img width="640" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/09531912-c64e-49d4-b8ce-795c370b4d29"></kbd>
 
+**Merge가 되면, 리모트 레포지토리의 해당 branch는 제거됩니다**
+
 10. 이후 다시 작업을 할 경우, 1~3번 과정을 통해 최신 내용을 갱신하기
 
-> 참고) branch 목록 보는 방법: `git branch`
