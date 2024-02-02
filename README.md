@@ -8,7 +8,7 @@
 ## Branch 관리
 - 문제 출제자가 주간 폴더, 문제별 폴더 및 README를 작성 시 Main에 바로 작성하기 
 - **문제를 풀 때에는, Main에 바로 Commit하지 않고, 자기 Branch에서 하기**
-- Branch 이름은 다음과 이름 초성-주차로 하기 `mhk-1, jwp-1, jyb-1, mhw-2, smy-2, hyl-3`
+- Branch 이름은 다음과 이름 초성-주차로 하기 `mhk-01, jwp-01, jyb-01, mhw-02, smy-02, hyl-03`
 - 문제를 다 풀었을 때, Main Branch에 Merge Request 보내기
 
 ### How to
@@ -21,16 +21,16 @@ git pull
 
 2. 자기의 branch로 바꾸기
 ```
-git checkout jwp-1
+git checkout jwp-01
 ```
  - branch가 없을 때, -b 옵션을 넣으면 branch를 새로 생성
 ```
-git checkout -b jwp-1
+git checkout -b jwp-01
 ```
 
 3. 자기 branch에 main의 내용을 merge 하기 (최신화)
 ```
-git checkout jwp-1
+git checkout jwp-01
 ```
 
 4. 문제 모두 푼 후, 파일 add 및 commit 하기
@@ -41,7 +41,7 @@ git commit -m "커밋 내용"
 
 5. 리모트 레포지토리의 자기 branch로 push하기
 ```
-git push origin jwp
+git push origin jwp-01
 ```
 
 6. Pull requests - New pull reqest
