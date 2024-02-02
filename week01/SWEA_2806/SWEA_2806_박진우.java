@@ -1,53 +1,48 @@
-// WIP
 import java.util.*;
 
-public class Main {
+public class Solution {
     static int N;
     static int result;
 
-    static boolean[][] getM(boolean[][] m, int x, int y){
-        boolean[][] newM = new boolean[N][N];
-        for(int i=0; i<N; i++){
-            for(int j=0; j<N; j++){
-                if(j==x || i==y){
-                    newM[i][j] = true;
-                } else {
-                    newM[i][j] = m[i][j];
-                }
-            }
+    static boolean[][] getM(boolean[][] m, int x, int y) {
+      boolean[][] newM = new boolean[N][N];
+      for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+          if (j == x || i == y // 가로세로
+              || i-j == y-x // 대각선(좌상->우하)
+              || i+j == y+x) { // 대각선(좌하->우상)
+            newM[i][j] = true;
+          }  else {
+            newM[i][j] = m[i][j];
+          }
         }
-        for(boolean[] a:newM){
-            System.out.println(Arrays.toString(a));
-        }
-        return newM;
+      }
+      return newM;
     }
-    static void queen(boolean[][] m, int y, int cnt){
-        if(cnt==N){
-            System.out.println("done\n");
+    
+    static void queen(boolean[][] m, int y){
+        if(y==N){
             result += 1;
             return;
         }
-        for(int i=y; i<N; i++){
-            for(int j=0; j<N; j++){
-                if(m[i][j]){
-                    continue;
-                }
-                System.out.println(i+", "+j);
-
-                for(boolean[] a:m){
-                    System.out.println(Arrays.toString(a));
-                }
-                System.out.println("----");
-                queen(getM(m, j, i), i+1+cnt, i+1);
-            }
-        }
+          for(int x=0; x<N; x++){
+              if(!m[y][x]){ // 퀸 공격 범위가 아니면
+                queen(getM(m, x, y), y+1); // 퀸 추가
+              }
+          }
     }
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        N = sc.nextInt();
-        boolean[][] m = new boolean[N][N]; // 퀸 올릴 수 있으면 false
+        int T = sc.nextInt();
+        
+        for(int t=1; t<=T; t++) {
+          result = 0;
+          N = sc.nextInt();
+          boolean[][] m = new boolean[N][N]; // 퀸의 공격범위: true
 
-        queen(m, 0, 0);
-        System.out.println(result);
+          queen(m, 0);
+          System.out.printf("#%d %d\n", t, result);
+        }
     }
 }   
