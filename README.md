@@ -48,13 +48,13 @@ git push origin jwp
 <br><kbd><img width="229" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/8a51500d-6760-4c31-814c-2f5d6159c4cc"></kbd>
 
 7. base: main, compare: 작업한 branch로 설정하여, Create pull reqest
-<br><kbd><img width="739" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/45329720-5193-459d-ad27-b51b89db944f"></kbd>
+<br><kbd><img width="640" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/45329720-5193-459d-ad27-b51b89db944f"></kbd>
 
 8. 내용 간단하게 작성하고, Assignee를 해당 주 문제 출제자로 설정
-<br><kbd><<img width="1009" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/a2c93f63-775a-4dcd-a789-e2550250246b"></kbd>
+<br><kbd><<img width="640" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/a2c93f63-775a-4dcd-a789-e2550250246b"></kbd>
 
 9. (문제 출제자) Pull Reqest 확인 후 Main에 Merge하기
-<br><kbd><<img width="750" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/09531912-c64e-49d4-b8ce-795c370b4d29"></kbd>
+<br><kbd><<img width="640" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/09531912-c64e-49d4-b8ce-795c370b4d29"></kbd>
 
 10. 이후 다시 작업을 할 경우, 1~3번 과정을 통해 최신 내용을 갱신하기
 
