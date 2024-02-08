@@ -47,10 +47,12 @@ git push origin jwp-01
 7. base: main, compare: 작업한 branch로 설정하여, Create pull reqest
 <br><kbd><img width="640" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/6f290657-9bf5-4c6d-8130-7584f7ed23a3f"></kbd>
 
-8. 내용 간단하게 작성하고, Assignee를 해당 주 문제 출제자로 설정
-<br><kbd><img width="640" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/a2606bcb-0dd0-45c2-970e-b9e665fb92e2"></kbd>
+8. 내용 간단하게 작성하고 Assignee를 해당 주 문제 출제자로 설정, Milestone을 해당 주차로 설정
+<br><kbd><img width="440" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/a2606bcb-0dd0-45c2-970e-b9e665fb92e2">
+<img width="200" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/da29dd4a-af89-476b-bbee-cf922a4f10b2"></kbd>
 
-9. (문제 출제자) Pull Reqest 확인 후 Main에 Merge하기
+
+9. (문제 출제자) Pull Reqest 확인 후 리뷰 댓글 달기. 문제 없으면 최종적으로 Main에 Merge하기
 <br><kbd><<img width="640" alt="image" src="https://github.com/Jinops/ssafy-algorithm-study/assets/46846964/71a8a8f9-948a-4b5d-8e13-9e71d1051011"></kbd>
 
 > :warning: **Merge가 되면, 리모트 레포지토리에서 해당 branch는 제거됩니다**.
