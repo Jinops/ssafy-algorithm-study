@@ -6,7 +6,7 @@
 - 코드 파일명은 `SWEA_2806_박진우.java` 형식으로 하기
 
 ## Branch 관리
-- 문제 출제자가 주간 폴더, 문제별 폴더 및 README를 작성 시 Main에 바로 작성하기 
+- 문제 출제자가 주간 폴더, 문제별 폴더 및 README를 작성하여 Main에 올리기
 - **문제를 풀 때에는, Main에 바로 Commit하지 않고, 자기 Branch에서 하기**
 - Branch 이름은 다음과 이름 초성-주차로 하기 `mhk-01, jwp-01, jyb-01, mhw-02, smy-02, hyl-03`
 - 문제를 다 풀었을 때, Main Branch에 Merge Request 보내기
