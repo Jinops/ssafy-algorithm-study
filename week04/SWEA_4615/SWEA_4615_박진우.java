@@ -1,4 +1,4 @@
-// Not solved.
+import java.awt.Point;
 import java.io.*;
 import java.util.*;
 
@@ -7,40 +7,31 @@ public class Solution {
     static int M;
     static int[][] map;
     
+    static int[][] deltas = {{1,0},{-1,0},{0,1},{0,-1},{1,1},{1,-1},{-1,1},{-1,-1}};
+    
+    static void fill(int[][] map, ArrayList<Point> targets, int color) {
+      for(Point p:targets) {
+        map[p.y][p.x] = color; 
+      }
+    }
     static void game(int[][] map, int x, int y, int color) {
         map[y][x] = color;
-        int minX = 0, maxX = N-1;
-        int minY = 0, maxY = N-1;
         
-        while(map[y][minX++]!=color) {}
-        while(map[y][maxX--]!=color) {}
-        for(int mx=minX; mx<=maxX; mx++) {
-            map[y][mx] = color;
+        for(int[] delta:deltas) {
+          int nx = x+delta[1];
+          int ny = y+delta[0];
+          ArrayList<Point> targets = new ArrayList<>();
+          
+          while(0<=nx&&nx<N && 0<=ny&&ny<N && map[ny][nx]!=0) {
+            if(map[ny][nx] == color){
+              fill(map, targets, color);
+              break;
+            }
+            targets.add(new Point(nx, ny));
+            nx += delta[1];
+            ny += delta[0];
+          }
         }
-        while(map[minY++][x]!=color) {}
-        while(map[maxY--][x]!=color) {}
-        for(int my=minY; my<=maxY; my++) {
-            map[my][x] = color;
-        }
-
-        int lower = Math.min(x, y), upper = N-1-Math.abs(x-y)-lower;
-        while(map[y-lower][x-lower]!=color) {lower--;}
-        while(map[y+upper][x+upper]!=color) {upper--;}
-        for(int m=-lower; m<=upper; m++) {
-            map[y+m][x+m] = color;
-        }
-        
-        // TODO
-        lower = Math.min(y, N-1-x); upper = Math.min(N-1-y, x);
-        while(map[y-lower][x+lower]!=color) {lower--;}
-        while(map[y+upper][x-upper]!=color) {upper--;}
-        for(int m=-lower; m<0; m++) {
-            map[y-m][x+m] = color;
-        }
-        for(int m=0; m<=upper; m++) {
-          map[y+m][x-m] = color;
-      }
-        
     }
     
     static int[] getCounts(int[][] map) {
