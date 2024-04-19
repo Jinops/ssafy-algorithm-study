@@ -10,6 +10,6 @@ https://www.acmicpc.net/problem/20055
 
 https://www.acmicpc.net/problem/11559
 
-### 3. [15685] 드래곤커브 (골드 IV)
+### 3. [15685] 드래곤커브 (골드 III)
 
 https://www.acmicpc.net/problem/15685
